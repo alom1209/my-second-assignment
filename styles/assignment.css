@@ -11,12 +11,11 @@
     justify-content: space-between;
     margin-top: 30px;
     margin-left: 150px;
-    margin-right: 150px;
 }
 .nav-list{
     display: flex;
-    justify-content: space-around;
-    gap: 50px;
+    /* justify-content: space-between; */
+    gap: 40px;
 }
 .nav-list li{
     list-style-type: none;
@@ -28,11 +27,14 @@
     display: flex;
     gap: 10px;
 }
+
 /* second section */
 .second-part{
-    display: grid;
-    grid-template-columns: repeat(2,1fr);
+    display: flex;
+    justify-content: space-between;
     margin: 120px 150px ;
+    align-items: center;
+    
 }
 .red-text{
     color: #E95A08;
@@ -48,11 +50,9 @@
     font-size: 1.3rem;
     color: rgba(0, 0, 0, 0.5);
 }
-.second-part img{
+.image{
     width: 100%;
-    position: relative;
-    right: 0px;
-    bottom: 0px;
+    height: auto;
 }
 /* responsive section */
 @media screen and (max-width:576px) {
@@ -61,7 +61,7 @@
    }
    .navbar{
     display: flex;
-    gap: 185px;
+    justify-content: space-between;
     margin-left: 16px;
     margin-right: 16px;
     margin-top: 13px;
@@ -69,5 +69,15 @@
    }
    .icon-text{
     display: flex;
+   }
+   .second-part{
+    flex-direction: column-reverse;
+    gap: 30px;
+    justify-content: space-between;
+    align-items: center;
+    padding: 40px 20px;
+   }
+   .image{
+    max-width: 100%;
    }
 }
