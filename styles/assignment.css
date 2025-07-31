@@ -1,0 +1,73 @@
+/* common styles */
+.flex{
+    display: flex;
+}
+.dark-light{
+    color: #8987A1;
+}
+/* navbar style */
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+    margin-left: 150px;
+    margin-right: 150px;
+}
+.nav-list{
+    display: flex;
+    justify-content: space-around;
+    gap: 50px;
+}
+.nav-list li{
+    list-style-type: none;
+}
+.without-cart{
+    gap: 50px;
+}
+.icon{
+    display: flex;
+    gap: 10px;
+}
+/* second section */
+.second-part{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    margin: 120px 150px ;
+}
+.red-text{
+    color: #E95A08;
+}
+.title{
+    font-size: 4rem;
+    font-weight: bold;
+    width: 517px;
+}
+.sub-title{
+    max-width: 570px;
+    font-weight: 400;
+    font-size: 1.3rem;
+    color: rgba(0, 0, 0, 0.5);
+}
+.second-part img{
+    width: 100%;
+    position: relative;
+    right: 0px;
+    bottom: 0px;
+}
+/* responsive section */
+@media screen and (max-width:576px) {
+   .without-cart{
+    display: none;
+   }
+   .navbar{
+    display: flex;
+    gap: 185px;
+    margin-left: 16px;
+    margin-right: 16px;
+    margin-top: 13px;
+    margin-bottom: 28px;
+   }
+   .icon-text{
+    display: flex;
+   }
+}
