@@ -266,6 +266,33 @@ ul li a{
     display: flex;
     width: 70%;
 }
+.footer{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 50px;
+    gap: 110px;
+}
+.logo-paragraph{
+    margin-top: 32px;
+}
+.log-paragraph{
+    margin-top: 16px;
+}
+.footer-navber{
+    display: flex;
+    gap: 110px;
+}
+.footer-navber div li{
+    list-style: none;
+}
+.footer-image-section{
+    display: flex;
+    gap: 24px;
+}
+.footer-image-section img{
+    width: 36px;
+    height: 36px;
+}
 /* responsive section */
 @media screen and (max-width:576px) {
    #home, #shop, #about{
@@ -367,5 +394,16 @@ ul li a{
    }
    .submission-box{
     width: 60%;
+   }
+   .footer{
+flex-direction: column;
+gap: 10px;
+   }
+   .footer-navber{
+    flex-direction: column;
+    gap: 10px;
+   }
+   .footer{
+    margin-bottom: 50px;
    }
 }
