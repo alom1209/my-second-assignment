@@ -230,8 +230,42 @@ ul li a{
 .card span{
     text-decoration: underline;
 }
+/* newsletter section */
+.newsletter-section{
+    background-image: linear-gradient(rgba(0 , 0, 0, 0.4)) , url(../assets/news-letter-bg.png);
+    background-size: cover;
+    background-repeat: none;
+    background-position: center;
+    height: 500px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 23px;
+    margin-top: 120px;
+}
+.news-title{
+    font-size: 50px;
+    font-weight: bold;
+    color: white;
+}
 
-
+.submission-box button{
+    background-color: #E95A08;
+    padding: 20px 50px;
+    color: white;
+    font-weight: 600;
+    font-size: 16px;
+    border: none;
+}
+.submission-box input[type="email"] {
+    width: 100%;
+    padding: 8px 20px;
+}
+.submission-box{
+    display: flex;
+    width: 70%;
+}
 /* responsive section */
 @media screen and (max-width:576px) {
    #home, #shop, #about{
@@ -324,5 +358,14 @@ ul li a{
    .zabo{
     grid-column: auto;
     grid-row: auto;
+   }
+   .submission-box button{
+    padding: 8px 20px;
+   }
+   .news-title{
+    font-size: 20px;
+   }
+   .submission-box{
+    width: 60%;
    }
 }
